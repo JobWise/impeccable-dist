@@ -12,12 +12,17 @@ in a new worktree, run `git submodule update --init`.
 
 ## Updating the payload
 
-1. In this repo: `npx impeccable update` (writes claude/ and codex/), then
-   copy the refreshed `.impeccable/upstream.json` here as `upstream.json`.
-2. Commit and push with the payload version in the message.
-3. In each consumer: bump the submodule SHA, sync `.impeccable/upstream.json`
-   from `vendor/impeccable/upstream.json`, and run the repo's validator (it
-   SHA-256-verifies the linked trees against upstream.json).
+Run `npm run update-impeccable` in paper-doll. The updater only detects real
+harness installs, so the update runs in a consumer and its writes land through
+the symlinks into this repo's working copy; the script then commits and pushes
+here, syncs `upstream.json`, bumps the consumer's submodule pointer, and
+validates (SHA-256 verification of the linked trees).
+
+Additional consumers afterwards: bump the submodule SHA and sync
+`.impeccable/upstream.json` from `vendor/impeccable/upstream.json`.
+
+Update deliberately — when release notes matter or a bug bites — not on a
+timer. The pin is a feature.
 
 Payload version and provenance: see `upstream.json`. License: Apache-2.0
 (see `claude/` payload for LICENSE terms carried from upstream).
