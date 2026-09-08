@@ -1,0 +1,19 @@
+{
+  "installerPackage": "impeccable@3.6.0",
+  "skillPayloadVersion": "4.1.1",
+  "providers": ["claude", "codex"],
+  "scope": "project",
+  "installCommand": "npx --yes impeccable@3.6.0 install --providers=claude,codex --scope=project --no-hooks",
+  "installedAt": "2026-08-20",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/pbakaus/impeccable",
+  "npmIntegrity": "sha512-nysc6/2OHTWqLrcSxTxZk4r4QMufhU8NTIuG2ic6p5zzyZe45AWBX3/18OA5S88pCWq+4z8pKsjUxhAM990RKg==",
+  "providerEntrypointSha256": {
+    "codex": "9d124382509eb15da0862f145bca0e53be00aaddb05272e4efc9a0832de048a9",
+    "claude": "bf8781e00c1e180aed3d9f0a9670025f6542a88fd01e6e9ae8052f7554d99086"
+  },
+  "providerTreeSha256": {
+    "codex": "16f7f1f484ab99c1149d2decd6c7e830849072dfa1057d6324af8bba84965a9d",
+    "claude": "8b4a6093d250b52a0c76fe6e89004611011c30427f8fbf6b8fb08f5f09c54757"
+  }
+}
