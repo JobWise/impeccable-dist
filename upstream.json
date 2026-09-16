@@ -1,19 +1,22 @@
 {
-  "installerPackage": "impeccable@3.6.0",
-  "skillPayloadVersion": "4.1.1",
-  "providers": ["claude", "codex"],
+  "installerPackage": "impeccable@4.0.4",
+  "skillPayloadVersion": "4.3.1",
+  "providers": [
+    "claude",
+    "codex"
+  ],
   "scope": "project",
-  "installCommand": "npx --yes impeccable@3.6.0 install --providers=claude,codex --scope=project --no-hooks",
-  "installedAt": "2026-08-20",
+  "installCommand": "npx --yes impeccable@4.0.4 install --providers=claude,codex --scope=project --no-hooks",
+  "installedAt": "2026-09-15",
   "license": "Apache-2.0",
   "repository": "https://github.com/pbakaus/impeccable",
-  "npmIntegrity": "sha512-nysc6/2OHTWqLrcSxTxZk4r4QMufhU8NTIuG2ic6p5zzyZe45AWBX3/18OA5S88pCWq+4z8pKsjUxhAM990RKg==",
+  "npmIntegrity": "sha512-iMoWq1LPovPXGtOFIQI7GUIsCPg6T/Rln8wSVQwa4LXHPJCmRoaUkAxP6nDu2dGWJzcFzvszeDT/pwWP+Ib8Xg==",
   "providerEntrypointSha256": {
-    "codex": "9d124382509eb15da0862f145bca0e53be00aaddb05272e4efc9a0832de048a9",
-    "claude": "bf8781e00c1e180aed3d9f0a9670025f6542a88fd01e6e9ae8052f7554d99086"
+    "codex": "38c2e839e130008b6da814ab9c16f3fcbbedfdf721a9638eebd31a9e65341a7a",
+    "claude": "3895765e9434400dfc1b30e364be002cf499c1718fb2431e65b907c14ae2cb27"
   },
   "providerTreeSha256": {
-    "codex": "16f7f1f484ab99c1149d2decd6c7e830849072dfa1057d6324af8bba84965a9d",
-    "claude": "8b4a6093d250b52a0c76fe6e89004611011c30427f8fbf6b8fb08f5f09c54757"
+    "codex": "cd644042d57cc157b16f840c687ffb08d2463de82ca598ed7970069ef8b8666e",
+    "claude": "309833c3a63dc7a58be15bcaf2faccbdaddc76b4d0278c0e81b8e36aca92d931"
   }
 }
